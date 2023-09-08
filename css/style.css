@@ -1073,6 +1073,19 @@ header .container .second-row .menu .link {
   padding-right: 100px;
   padding-left: 40px;
 }
+.article .container .content .box .title::before, .article .container .content .box .title::after {
+  content: "";
+  text-decoration: underline;
+}
+.article .container .content .box .title::before {
+  content: attr(data-text);
+}
+.article .container .content .box .title::after {
+  content: attr(data-text);
+  display: inline-block;
+  width: 0;
+  overflow: hidden;
+}
 .article .container .content .box .text {
   padding-left: 40px;
 }
@@ -1084,6 +1097,56 @@ header .container .second-row .menu .link {
 }
 .article .container .content .box .text .light {
   font-size: 14px;
+  padding-right: 300px;
+  position: relative;
+  padding-bottom: 25px;
+  display: inline-block;
+}
+.article .container .content .box .text .light::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 100px;
+  width: 100%;
   border-bottom: 1px solid #F0EFE9;
+}
+.article .container .content .category-box {
+  border: 1px solid #F0EFE9;
+  margin-top: 30px;
+}
+.article .container .content .category-box .title {
+  font-family: "DM+Sans";
+  font-size: 22px;
+  font-weight: 800;
+  padding-bottom: 15px;
   padding-right: 100px;
+  padding-left: 40px;
+}
+.article .container .content .category-box .title::before, .article .container .content .category-box .title::after {
+  content: "";
+  text-decoration: underline;
+}
+.article .container .content .category-box .title::before {
+  content: attr(data-text);
+}
+.article .container .content .category-box .title::after {
+  content: attr(data-text);
+  display: inline-block;
+  width: 0;
+  overflow: hidden;
+}
+.article .container .content .category-box .text {
+  display: flex;
+  justify-content: space-around;
+  font-family: "DM+Sans";
+  font-size: 16px;
+  font-weight: 800;
+}
+.article .container .content .category-box .text .bold {
+  color: #191919;
+}
+.article .container .content .category-box .text .light {
+  color: #F0EFE9;
+  margin-right: 170px;
 }/*# sourceMappingURL=style.css.map */

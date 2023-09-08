@@ -1252,6 +1252,23 @@ header {
                     padding-bottom: 15px;
                     padding-right: 100px;
                     padding-left: 40px;
+
+                    &::before,
+                    &::after {
+                        content: "";
+                        text-decoration: underline;
+                    }
+                
+                    &::before {
+                        content: attr(data-text);
+                    }
+                
+                    &::after {
+                        content: attr(data-text);
+                        display: inline-block;
+                        width: 0;
+                        overflow: hidden;
+                    }
                 }
 
                 .text {
@@ -1266,8 +1283,69 @@ header {
                     }
                     .light {
                         font-size: 14px;
+                        padding-right: 300px;
+                        position: relative;
+                        padding-bottom: 25px;
+                        display: inline-block;
+                        
+                    }
+                    .light::after {
+                        content: "";
+                        position: absolute;
+                        bottom: 10px; 
+                        left: 0;
+                        right: 100px;
+                        width: 100%;
                         border-bottom: 1px solid #F0EFE9;
-                        padding-right: 100px;
+                    }
+                }
+            }
+            .category-box {
+                border: 1px solid #F0EFE9;
+                margin-top: 30px;
+
+
+                .title {
+                    font-family: 'DM+Sans';
+                    font-size: 22px;
+                    font-weight: 800; 
+                    padding-bottom: 15px;
+                    padding-right: 100px;
+                    padding-left: 40px;
+
+                    &::before,
+                    &::after {
+                        content: "";
+                        text-decoration: underline;
+                    }
+                
+                    &::before {
+                        content: attr(data-text);
+                    }
+                
+                    &::after {
+                        content: attr(data-text);
+                        display: inline-block;
+                        width: 0;
+                        overflow: hidden;
+                    }
+                }
+
+                .text {
+                    display: flex;
+                    justify-content: space-around;
+                    font-family: 'DM+Sans';
+                    font-size: 16px;
+                    font-weight: 800;
+
+                    .bold {
+                        color:#191919;
+
+                    }
+                    .light {
+                        color:#F0EFE9;
+                        margin-right: 170px;
+
                     }
                 }
             }
