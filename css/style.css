@@ -1001,4 +1001,89 @@ header .container .second-row .menu .link {
 .map iframe {
   width: 100%;
   height: 600px;
+}
+
+/* Details */
+.article {
+  margin-top: 50px;
+}
+.article .container .title {
+  font-family: "DM+Sans";
+  font-size: 45px;
+  font-weight: 800;
+}
+.article .container .label {
+  display: flex;
+  justify-content: space-around;
+  max-width: 500px;
+}
+.article .container .label .text {
+  font-family: "DM+Sans";
+  font-size: 20px;
+  font-weight: 500;
+}
+.article .container .label li {
+  color: #f94d1c;
+}
+.article .container .content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.article .container .content .left {
+  max-width: 750px;
+}
+.article .container .content .left .text {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.article .container .content .right {
+  padding-bottom: 20px;
+  margin-left: 80px;
+}
+.article .container .content .right form {
+  margin-bottom: 20px;
+}
+.article .container .content .right form .search-input {
+  display: flex;
+  align-items: center;
+  background-color: #F0EFE9;
+  border-radius: 15px;
+  padding: 5px;
+}
+.article .container .content .right form input[type=text] {
+  flex: 1;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.article .container .content .right form i {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.article .container .content .box {
+  border: 1px solid #F0EFE9;
+  margin-top: 30px;
+}
+.article .container .content .box .title {
+  font-family: "DM+Sans";
+  font-size: 22px;
+  font-weight: 800;
+  padding-bottom: 15px;
+  padding-right: 100px;
+  padding-left: 40px;
+}
+.article .container .content .box .text {
+  padding-left: 40px;
+}
+.article .container .content .box .text .bold {
+  font-family: "DM+Sans";
+  font-size: 16px;
+  font-weight: 800;
+  padding-right: 100px;
+}
+.article .container .content .box .text .light {
+  font-size: 14px;
+  border-bottom: 1px solid #F0EFE9;
+  padding-right: 100px;
 }/*# sourceMappingURL=style.css.map */
