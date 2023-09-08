@@ -1058,19 +1058,111 @@ header {
 
 .contact-data {
     padding-top: 50px;
+    padding-bottom: 50px;
 
     .container {
         display: flex;
         justify-content: space-between;
 
         .box {
-            border: 1px solid #0E1021;
+            border: 1px solid #F0EFE9;
             height: 205px;
             width: 420px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .icon { 
+                height: 60px; 
+                width: 60px;
+                background-color: #0E1021; 
+                border-radius: 50%; 
+                display: flex;
+                justify-content: center;
+                align-items: center;
+         
+                i {
+                    color: #F0EFE9;
+                    font-size: 1.2rem;
+                    align-items: center;
+                }
+            }
+
+            .info {
+                display: block;
+                padding-top: 20px;
+                margin-left: 20px;
+                .text {
+                    font-family: 'DM+Sans';
+                    font-size: 22px;
+                    font-weight: 800;
+                }
+                .data {
+                    font-family: 'Inter';
+                    font-size: 18px;
+                }
+
+            }
+
 
         }
     }
 }
+
+.contact-form {
+    .container {
+        background-color: #F0EFE9;
+        padding-top: 120px;
+        padding-bottom: 100px;
+
+        .title {
+            font-family: 'DM+Sans';
+            font-size: 45px;
+            font-weight: 800;
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            justify-content: center; 
+
+            .form-group {
+                display: grid;
+                gap: 5px;
+                grid-template-columns: 1fr;
+                grid-template-areas: "name" "email" "message";
+
+                input[type="text"],
+                textarea {
+                    display: block; 
+                    width: 1000px;
+                    padding: 20px;
+                    font-size: 16px;
+                    border: 1px solid #FFFFFF;
+                    border-radius: 30px;
+                    box-sizing: border-box;
+                    background-color: #FFFFFF;
+                }
+
+                textarea {
+                    height: 200px;
+                }
+
+                ::placeholder {
+                    color:  #F0EFE9;
+                }
+            }
+            button {
+                margin-top: 20px;
+                width: 1000px;
+                border:none;
+            }
+        }
+    }
+}
+
 
 .map iframe {
     width: 100%;

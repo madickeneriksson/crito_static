@@ -906,15 +906,96 @@ header .container .second-row .menu .link {
 /* contact */
 .contact-data {
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 .contact-data .container {
   display: flex;
   justify-content: space-between;
 }
 .contact-data .container .box {
-  border: 1px solid #0E1021;
+  border: 1px solid #F0EFE9;
   height: 205px;
   width: 420px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-data .container .box .icon {
+  height: 60px;
+  width: 60px;
+  background-color: #0E1021;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-data .container .box .icon i {
+  color: #F0EFE9;
+  font-size: 1.2rem;
+  align-items: center;
+}
+.contact-data .container .box .info {
+  display: block;
+  padding-top: 20px;
+  margin-left: 20px;
+}
+.contact-data .container .box .info .text {
+  font-family: "DM+Sans";
+  font-size: 22px;
+  font-weight: 800;
+}
+.contact-data .container .box .info .data {
+  font-family: "Inter";
+  font-size: 18px;
+}
+
+.contact-form .container {
+  background-color: #F0EFE9;
+  padding-top: 120px;
+  padding-bottom: 100px;
+}
+.contact-form .container .title {
+  font-family: "DM+Sans";
+  font-size: 45px;
+  font-weight: 800;
+  text-align: center;
+}
+.contact-form .container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contact-form .container form .form-group {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 1fr;
+  grid-template-areas: "name" "email" "message";
+}
+.contact-form .container form .form-group input[type=text],
+.contact-form .container form .form-group textarea {
+  display: block;
+  width: 1000px;
+  padding: 20px;
+  font-size: 16px;
+  border: 1px solid #FFFFFF;
+  border-radius: 30px;
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+}
+.contact-form .container form .form-group textarea {
+  height: 200px;
+}
+.contact-form .container form .form-group ::-moz-placeholder {
+  color: #F0EFE9;
+}
+.contact-form .container form .form-group ::placeholder {
+  color: #F0EFE9;
+}
+.contact-form .container form button {
+  margin-top: 20px;
+  width: 1000px;
+  border: none;
 }
 
 .map iframe {
