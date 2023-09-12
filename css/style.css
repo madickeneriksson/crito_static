@@ -12,7 +12,7 @@ html, body {
   border-color: 1px solid #F9D783;
   color: #191919;
   text-decoration: none;
-  padding: 8px 25px;
+  padding: 15px 30px;
   font-weight: 600;
   border-radius: 25px;
 }
@@ -54,7 +54,7 @@ html, body {
   border: 1px solid #191919;
   color: #191919;
   text-decoration: none;
-  padding: 25px 35px;
+  padding: 15px 30px;
   font-weight: 600;
   border-radius: 25px;
 }
@@ -148,6 +148,9 @@ header .container .second-row .menu .link {
   text-decoration: none;
   margin-right: 15px;
 }
+header .container .second-row .button .btn-theme {
+  padding: 8px 15px;
+}
 
 .showcase {
   background-color: #F0EFE9;
@@ -156,16 +159,13 @@ header .container .second-row .menu .link {
   display: flex;
   justify-content: space-between;
 }
-.showcase .showcase-content {
-  padding: 10px;
-}
-.showcase .showcase-content .showcase-title {
+.showcase .container .showcase-content .showcase-title {
   font-family: "DM+Sans";
   font-size: 96px;
   font-weight: 800;
-  align-items: center;
+  line-height: 1;
 }
-.showcase .showcase-content .showcase-text {
+.showcase .container .showcase-content .showcase-text {
   font-size: 20px;
   padding-bottom: 50px;
 }
@@ -191,14 +191,19 @@ header .container .second-row .menu .link {
   font-family: "DM+Sans";
   font-size: 45px;
   font-weight: 800;
-  color: #E4E4E4;
+  color: #191919;
 }
 .featured .featured-content .left-content .button {
-  margin-top: 20px;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.featured .featured-content .left-content .button .btn-theme {
   width: 430px;
   height: 56px;
   border-radius: 30px;
-  background-color: #E4E4E4;
 }
 .featured .right-content {
   display: grid;
@@ -728,6 +733,9 @@ header .container .second-row .menu .link {
 }
 .signup .container form .btn-theme {
   padding: 15px 30px;
+}
+.signup img {
+  float: right;
 }
 
 .footer {
