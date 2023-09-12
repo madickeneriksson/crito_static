@@ -154,10 +154,14 @@ header .container .second-row .button .btn-theme {
 
 .showcase {
   background-color: #F0EFE9;
+  position: relative;
 }
 .showcase .container {
   display: flex;
   justify-content: space-between;
+}
+.showcase .container .showcase-content {
+  padding-top: 70px;
 }
 .showcase .container .showcase-content .showcase-title {
   font-family: "DM+Sans";
@@ -168,6 +172,15 @@ header .container .second-row .button .btn-theme {
 .showcase .container .showcase-content .showcase-text {
   font-size: 20px;
   padding-bottom: 50px;
+}
+.showcase .container img {
+  position: relative;
+  right: 0;
+}
+.showcase .lines {
+  position: absolute;
+  left: 0;
+  top: 520px;
 }
 
 .logos img {
@@ -311,6 +324,7 @@ header .container .second-row .button .btn-theme {
 }
 
 .service {
+  position: relative;
   background-color: #F0EFE9;
   padding-bottom: 70px;
 }
@@ -338,6 +352,15 @@ header .container .second-row .button .btn-theme {
   padding: 30px;
   margin-bottom: 40px;
 }
+.service .container .boxes .box:hover {
+  background-color: #F9D783;
+}
+.service .container .boxes .box:hover .more-info {
+  background-color: #FFFFFF;
+}
+.service .container .boxes .box:hover .more-info i {
+  color: #0E1021;
+}
 .service .container .boxes .box .title {
   font-family: "DM+Sans";
   font-size: 22px;
@@ -351,21 +374,29 @@ header .container .second-row .button .btn-theme {
 }
 .service .container .boxes .box .more-info {
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: 20px;
+  right: 20px;
   display: flex;
   background-color: #191919;
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  bottom: 20px;
-  right: 20px;
   align-items: center;
   justify-content: center;
 }
 .service .container .boxes .box .more-info i {
   padding: 9px;
   font-size: 25px;
+  color: #FFFFFF;
+}
+.service .button {
+  display: flex;
+  justify-content: center;
+}
+.service .lines {
+  position: absolute;
+  right: 0;
+  top: 500px;
 }
 
 .choose {
@@ -478,6 +509,9 @@ header .container .second-row .button .btn-theme {
   justify-content: right;
   padding: 20px;
 }
+.projekt .container .grid .image-content .read-more .btn-theme-white {
+  border: none;
+}
 
 .members {
   background-color: #EDCF86;
@@ -509,7 +543,7 @@ header .container .second-row .button .btn-theme {
   align-items: center;
 }
 .members .container .btn-container .btn-theme {
-  border-color: #191919;
+  border: 1px solid #191919;
   margin-top: 15px;
   padding: 10px 20px;
 }
@@ -809,9 +843,11 @@ header .container .second-row .button .btn-theme {
   color: #DAD9D3;
 }
 
-/* News */
+/* showcase for the other */
 .showcase-title {
+  position: relative;
   background-color: #F0EFE9;
+  /* news */
 }
 .showcase-title .container {
   padding-top: 120px;
@@ -833,6 +869,11 @@ header .container .second-row .button .btn-theme {
   font-size: 56px;
   font-weight: 800;
   text-align: center;
+}
+.showcase-title .lines {
+  position: absolute;
+  left: 0;
+  top: 120px;
 }
 
 .news-articles {
