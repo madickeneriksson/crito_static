@@ -1191,6 +1191,7 @@ header {
             }
 
             li {
+                font-size: 1.3rem;
                 color:#f94d1c;
             }
         }
@@ -1202,11 +1203,48 @@ header {
             .left {
 
                 max-width: 750px;
+                padding-bottom: 50px;
 
                 .text {
                     padding-top: 40px;
                     padding-bottom: 40px;
+                }
+                .text-bold {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
 
+                    .icon {
+                        
+                    i {
+                        color: #0E1021;
+                        font-size: 1.9rem;
+                    }
+                    }
+
+                    .text {
+                        padding-left: 20px;
+                        font-family: 'DM+Sans';
+                        font-size: 22px;
+                        font-weight: 500; 
+
+                    }
+                }
+                .tags {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .tag {
+                        display: flex;
+                        width: 110px;
+                        height: 40px;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 20px;
+                        background-color: #f3f3f3;
+                        text-decoration: none;
+                        color: #191919;
+                    }
                 }
             }
 
@@ -1353,6 +1391,116 @@ header {
         }
     }
   }
+  .news-details {
+    background-color: #F0EFE9;
+    padding-bottom: 50px;
+    .container {
+        .top-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        .text {
+            position: relative;
+            text-align: left;
+            padding-top: 60px;
+            .red {
+                font-family: 'Inter';
+                font-size: 18px;
+                color: #f94d1c; 
+
+            }
+            .title {
+                font-family: 'DM+Sans';
+                font-size: 45px;
+                font-weight: 800;
+            }
+        }
+        .btn-container {
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            .btn-theme-white {
+                border-color: #191919;
+                margin-top: 80px; 
+                padding: 10px 20px;
+            }
+        }
+    }
+    .content-image {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 20px;
+
+        .info {
+            position: relative;
+            padding: 20px;
+            .small-title {
+                padding-top: 20px;
+                font-family: 'Inter';
+                font-size: 16px;
+            }
+    
+            .title {
+                font-family: 'DM+Sans';
+                font-size: 22px;
+                font-weight: 800;
+                padding-top: 20px;
+            }
+    
+            .text {
+                padding-top: 20px;
+                font-family: 'Inter';
+                font-size: 16px;
+            }
+            .date {
+                position: absolute; 
+                top: 30px; 
+                left: 30px; 
+                background-color: #EDCF86;
+                width: 60px; 
+                height: 60px; 
+                text-align: center;
+
+                .day {
+                    font-family: 'DM+Sans';
+                    font-size: 22px;
+                    font-weight: 800;
+                }
+                .mon {
+                    font-family: 'Inter';
+                    font-size: 16px;
+                }
+            }
+        }     
+    }
+    /* pagination koden = chat-gpt*/
+    .pagination {
+        position: absolute;
+        left: 50%; /* Placera horisontellt i mitten av container */
+        transform: translateX(-50%); /* Centrera horisontellt */
+
+        list-style: none; /* Ta bort punktlistan */
+        padding: 0;
+        margin: 0;
+        padding-bottom: 40px;
+
+        li {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background-color: #ccc;
+            border-radius: 50%;
+            margin: 0 5px; /* Justera avstånd mellan pagineringspunkter */
+
+            &.active {
+                background-color: #333; /* Aktiv pagineringspunkt */
+            }
+        }
+}
+}
+
+}  
 
 
   

@@ -1023,6 +1023,7 @@ header .container .second-row .menu .link {
   font-weight: 500;
 }
 .article .container .label li {
+  font-size: 1.3rem;
   color: #f94d1c;
 }
 .article .container .content {
@@ -1032,10 +1033,41 @@ header .container .second-row .menu .link {
 }
 .article .container .content .left {
   max-width: 750px;
+  padding-bottom: 50px;
 }
 .article .container .content .left .text {
   padding-top: 40px;
   padding-bottom: 40px;
+}
+.article .container .content .left .text-bold {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.article .container .content .left .text-bold .icon i {
+  color: #0E1021;
+  font-size: 1.9rem;
+}
+.article .container .content .left .text-bold .text {
+  padding-left: 20px;
+  font-family: "DM+Sans";
+  font-size: 22px;
+  font-weight: 500;
+}
+.article .container .content .left .tags {
+  display: flex;
+  justify-content: space-between;
+}
+.article .container .content .left .tags .tag {
+  display: flex;
+  width: 110px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: #f3f3f3;
+  text-decoration: none;
+  color: #191919;
 }
 .article .container .content .right {
   padding-bottom: 20px;
@@ -1149,4 +1181,106 @@ header .container .second-row .menu .link {
 .article .container .content .category-box .text .light {
   color: #F0EFE9;
   margin-right: 170px;
+}
+
+.news-details {
+  background-color: #F0EFE9;
+  padding-bottom: 50px;
+}
+.news-details .container {
+  /* pagination koden = chat-gpt*/
+}
+.news-details .container .top-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.news-details .container .top-content .text {
+  position: relative;
+  text-align: left;
+  padding-top: 60px;
+}
+.news-details .container .top-content .text .red {
+  font-family: "Inter";
+  font-size: 18px;
+  color: #f94d1c;
+}
+.news-details .container .top-content .text .title {
+  font-family: "DM+Sans";
+  font-size: 45px;
+  font-weight: 800;
+}
+.news-details .container .top-content .btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.news-details .container .top-content .btn-container .btn-theme-white {
+  border-color: #191919;
+  margin-top: 80px;
+  padding: 10px 20px;
+}
+.news-details .container .content-image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+.news-details .container .content-image .info {
+  position: relative;
+  padding: 20px;
+}
+.news-details .container .content-image .info .small-title {
+  padding-top: 20px;
+  font-family: "Inter";
+  font-size: 16px;
+}
+.news-details .container .content-image .info .title {
+  font-family: "DM+Sans";
+  font-size: 22px;
+  font-weight: 800;
+  padding-top: 20px;
+}
+.news-details .container .content-image .info .text {
+  padding-top: 20px;
+  font-family: "Inter";
+  font-size: 16px;
+}
+.news-details .container .content-image .info .date {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  background-color: #EDCF86;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+}
+.news-details .container .content-image .info .date .day {
+  font-family: "DM+Sans";
+  font-size: 22px;
+  font-weight: 800;
+}
+.news-details .container .content-image .info .date .mon {
+  font-family: "Inter";
+  font-size: 16px;
+}
+.news-details .container .pagination {
+  position: absolute;
+  left: 50%; /* Placera horisontellt i mitten av container */
+  transform: translateX(-50%); /* Centrera horisontellt */
+  list-style: none; /* Ta bort punktlistan */
+  padding: 0;
+  margin: 0;
+  padding-bottom: 40px;
+}
+.news-details .container .pagination li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 0 5px; /* Justera avstånd mellan pagineringspunkter */
+}
+.news-details .container .pagination li.active {
+  background-color: #333; /* Aktiv pagineringspunkt */
 }/*# sourceMappingURL=style.css.map */
